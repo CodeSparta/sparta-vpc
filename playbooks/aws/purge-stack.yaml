@@ -1,0 +1,24 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: Purge security components using CloudFormation
+      cloudformation:
+        stack_name: "{{ infrastructure_name }}-security"
+        state: absent
+      register: r_cf_security
+
+    - name: Debug output for security components creation
+      debug:
+        var: r_cf_security
+
+    - name: Purge VPC using CloudFormation
+      cloudformation:
+        stack_name: "{{ infrastructure_name }}-vpc"
+        state: absent
+      register: r_cf_vpc
+
+    - name: Debug output for VPC creation
+      debug:
+        var: r_cf_vpc
+
