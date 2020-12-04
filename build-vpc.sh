@@ -5,7 +5,7 @@ sudo podman pull docker.io/cloudctl/konductor
 
 sudo podman run -it --rm \
     --name ${project} \
-    --entrypoint ./site.yml \
+    --entrypoint playbooks/aws/site.yml \
     --volume $(pwd)/aws:/root/.aws:z \
     --workdir /root/platform/iac/${project} \
     --volume $(pwd):/root/platform/iac/${project}:z \
