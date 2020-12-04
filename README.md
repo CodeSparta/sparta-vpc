@@ -60,9 +60,7 @@ allowed_bootstrap_ssh_cidr: 0.0.0.0/0
 ----------------------------------------------------
 Build Sparta VPC:
 ```
-mkdir sparta-vpc
-```
-```
+mkdir -p sparta-vpc && \
 podman run -it --rm -v $(pwd)/sparta-vpc:/clone:z \
   quay.io/cloudctl/git https://github.com/CodeSparta/sparta-vpc.git
 ```
