@@ -1,7 +1,13 @@
----
-
-- hosts: localhost
+#!/usr/local/bin/ansible-playbook --inventory=inventory.yaml
+- name: 'Konductor | Sparta | VPC'
+  hosts: localhost
+  vars:
+    module: "destroy"
+    ansible_name_module: " Konductor | Sparta | VPC"
+  vars_files:
+    - vars/aws.yml
   tasks:
+
     - name: Purge security components using CloudFormation
       cloudformation:
         stack_name: "{{ infrastructure_name }}-security"

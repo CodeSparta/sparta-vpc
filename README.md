@@ -70,3 +70,22 @@ ansible-playbook -e @vars/aws.yml playbooks/aws/purge-stack.yaml -v
 ```
 
 [1]: https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-user-infra.html
+
+
+########### WIP DOCS
+```
+mkdir sparta-vpc
+```
+```
+podman run -it --rm -v $(pwd)/devkit-vpc:/clone:z \
+  quay.io/cloudctl/git --branch master https://github.com/CodeSparta/prometheus.git
+```
+```
+cd sparta-vpc
+```
+```
+vi playbook/aws/vars/aws.yml
+```
+```
+./build-vpc.sh -vv -e aws_cloud_region=us-gov-west-1 -e aws_access_key=xxxxxxxxxxxxx -e aws_secret_key=XXXXXXXXXXXXXXXXX
+```

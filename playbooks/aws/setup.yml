@@ -1,0 +1,23 @@
+#!/usr/local/bin/ansible-playbook --inventory=inventory.yaml
+- name: 'Konductor | Sparta | VPC'
+  hosts: localhost
+  vars:
+    module: "setup"
+    ansible_name_module: " Konductor | Sparta | VPC"
+  vars_files:
+    - vars/aws.yml
+  tasks:
+
+    - name: '{{ ansible_name_module }} | file | Create ~/.aws'
+      file:
+        path: "/root/.aws"
+        state: directory
+
+    ####### Stage Variables & AWS Creds
+    - name: '{{ ansible_name_module }} | template | Terraform Vars & aws credentials'
+      template:
+        src: "{{ item.name }}"
+        dest: "{{ item.dest }}"
+        mode: "{{ item.mode }}"
+      loop:
+        - { mode: '600', name: "templates/aws/credentials.j2", dest: "{{ ansible_env.HOME }}/.aws/credentials"}

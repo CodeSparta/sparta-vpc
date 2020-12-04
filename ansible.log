@@ -1,0 +1,1761 @@
+2020-12-04 19:28:59,892 p=92 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:28:59,892 p=92 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:28:59,902 p=92 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2020-12-04 19:29:00,214 p=92 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:29:00,215 p=92 u=root n=ansible | ERROR! vars file vars/aws.yml was not found
+Could not find file on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2020-12-04 19:29:30,341 p=97 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:29:30,342 p=97 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:29:30,351 p=97 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit
+localhost does not match 'all'
+
+2020-12-04 19:29:30,646 p=97 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:29:30,646 p=97 u=root n=ansible | ERROR! vars file vars/aws.yml was not found
+Could not find file on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2020-12-04 19:30:34,999 p=122 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:30:35,000 p=122 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:30:35,010 p=122 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:30:35,309 p=122 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:30:35,309 p=122 u=root n=ansible | ERROR! vars file vars/aws.yml was not found
+Could not find file on the Ansible Controller.
+If you are using a module and expect the file to exist on the remote, see the remote_src option
+2020-12-04 19:31:13,759 p=168 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:31:13,759 p=168 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:31:13,769 p=168 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:31:14,063 p=168 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:31:14,066 p=168 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:31:14,066 p=168 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | Friday 04 December 2020  19:31:14 +0000 (0:00:00.010)       0:00:00.010 ******* 
+2020-12-04 19:31:14,067 p=168 u=root n=ansible | =============================================================================== 
+2020-12-04 19:34:40,798 p=431 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:34:40,798 p=431 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:34:40,807 p=431 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:34:41,106 p=431 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:34:41,109 p=431 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:34:41,109 p=431 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:34:41,109 p=431 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: local
+
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 0 seconds
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | Friday 04 December 2020  19:34:41 +0000 (0:00:00.010)       0:00:00.010 ******* 
+2020-12-04 19:34:41,110 p=431 u=root n=ansible | =============================================================================== 
+2020-12-04 19:35:09,699 p=437 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:35:09,699 p=437 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:35:09,708 p=437 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:35:10,004 p=437 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:35:10,007 p=437 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:35:10,007 p=437 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:35:10,008 p=437 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:35:10,017 p=437 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 19:35:10,017 p=437 u=root n=ansible | Friday 04 December 2020  19:35:10 +0000 (0:00:00.019)       0:00:00.019 ******* 
+2020-12-04 19:35:10,813 p=437 u=root n=ansible | ok: [localhost]
+2020-12-04 19:35:10,846 p=437 u=root n=ansible | TASK [Konductor | Sparta | VPC | file | Create ~/.aws] **************************************************************************************************************************************************************
+2020-12-04 19:35:10,846 p=437 u=root n=ansible | Friday 04 December 2020  19:35:10 +0000 (0:00:00.829)       0:00:00.848 ******* 
+2020-12-04 19:35:11,207 p=437 u=root n=ansible | ok: [localhost]
+2020-12-04 19:35:11,224 p=437 u=root n=ansible | TASK [Konductor | Sparta | VPC | template | Terraform Vars & aws credentials] ***************************************************************************************************************************************
+2020-12-04 19:35:11,224 p=437 u=root n=ansible | Friday 04 December 2020  19:35:11 +0000 (0:00:00.378)       0:00:01.226 ******* 
+2020-12-04 19:35:11,247 p=437 u=root n=ansible | fatal: [localhost]: FAILED! => {}
+
+MSG:
+
+'local_home' is undefined
+
+2020-12-04 19:35:11,248 p=437 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 19:35:11,248 p=437 u=root n=ansible | localhost                  : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-12-04 19:35:11,249 p=437 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 1 seconds
+2020-12-04 19:35:11,249 p=437 u=root n=ansible | Friday 04 December 2020  19:35:11 +0000 (0:00:00.024)       0:00:01.251 ******* 
+2020-12-04 19:35:11,249 p=437 u=root n=ansible | =============================================================================== 
+2020-12-04 19:37:03,433 p=501 u=root n=ansible | localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_vendor": "SeaBIOS",
+        "ansible_bios_version": "1.13.0-3.fc33",
+        "ansible_board_asset_tag": "NA",
+        "ansible_board_name": "NA",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "NA",
+        "ansible_board_version": "NA",
+        "ansible_chassis_asset_tag": "NA",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "QEMU",
+        "ansible_chassis_version": "pc-q35-5.1",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_date_time": {
+            "date": "2020-12-04",
+            "day": "04",
+            "epoch": "1607110623",
+            "hour": "19",
+            "iso8601": "2020-12-04T19:37:03Z",
+            "iso8601_basic": "20201204T193703357996",
+            "iso8601_basic_short": "20201204T193703",
+            "iso8601_micro": "2020-12-04T19:37:03.357996Z",
+            "minute": "37",
+            "month": "12",
+            "second": "03",
+            "time": "19:37:03",
+            "tz": "UTC",
+            "tz_offset": "+0000",
+            "weekday": "Friday",
+            "weekday_number": "5",
+            "weeknumber": "48",
+            "year": "2020"
+        },
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {}
+        },
+        "ansible_devices": {
+            "sr0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "QEMU DVD-ROM",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "QEMU",
+                "virtual": 1
+            },
+            "vda": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2097152",
+                        "sectorsize": 512,
+                        "size": "1.00 GB",
+                        "start": "2048",
+                        "uuid": null
+                    },
+                    "vda2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "16566272",
+                        "sectorsize": 512,
+                        "size": "7.90 GB",
+                        "start": "2099200",
+                        "uuid": null
+                    },
+                    "vda3": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "1054867456",
+                        "sectorsize": 512,
+                        "size": "503.00 GB",
+                        "start": "18665472",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1073741824",
+                "sectorsize": "512",
+                "size": "512.00 GB",
+                "support_discard": "512",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.3",
+        "ansible_dns": {
+            "nameservers": [
+                "1.1.1.1",
+                "8.8.8.8"
+            ],
+            "search": [
+                "mordor.kubernautics.io"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_env": {
+            "BUILDAH_ISOLATION": "chroot",
+            "HISTCONTROL": "ignoredups",
+            "HISTSIZE": "1000",
+            "HOME": "/root",
+            "HOSTNAME": "",
+            "LANG": "C",
+            "LC_ALL": "C",
+            "LC_NUMERIC": "C",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "root",
+            "MAIL": "/var/spool/mail/root",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/platform/bin:/root/platform/bin:/root/platform/bin",
+            "PWD": "/root/platform/iac/sparta-vpc",
+            "SHELL": "/bin/bash",
+            "SHLVL": "4",
+            "TERM": "screen",
+            "TMUX": "/tmp//tmux-0/default,29,0",
+            "TMUX_PANE": "%0",
+            "USER": "root",
+            "_": "/usr/bin/python3",
+            "container": "podman",
+            "varVerKoffer": "4.6.6",
+            "varVerKonductor": "4.6.6",
+            "varVerOpenshift": "4.6.6",
+            "varVerTpdk": "4.6.6",
+            "versOCP": "4.6.6"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "f413cc0f6f98",
+        "ansible_hostname": "f413cc0f6f98",
+        "ansible_hostnqn": "",
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-240.el8.x86_64",
+        "ansible_kernel_version": "#1 SMP Wed Sep 23 05:13:10 EDT 2020",
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_machine": "x86_64",
+        "ansible_memfree_mb": 4113,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 6911,
+                "used": 856
+            },
+            "real": {
+                "free": 4113,
+                "total": 7767,
+                "used": 3654
+            },
+            "swap": {
+                "cached": 0,
+                "free": 8088,
+                "total": 8088,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 7767,
+        "ansible_mounts": [
+            {
+                "block_available": 129844952,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949096,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560329,
+                "inode_total": 263716864,
+                "inode_used": 156535,
+                "mount": "/root/.aws",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844923392,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 129844952,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949096,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560329,
+                "inode_total": 263716864,
+                "inode_used": 156535,
+                "mount": "/root/platform/iac/sparta-vpc",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844923392,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "f413cc0f6f98",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "1",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "2",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "3",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 4,
+        "ansible_processor_nproc": 4,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 4,
+        "ansible_product_name": "Standard PC (Q35 + ICH9, 2009)",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "c371910d-d209-46f5-a2dd-e5078eb264a1",
+        "ansible_product_version": "pc-q35-5.1",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_swapfree_mb": 8088,
+        "ansible_swaptotal_mb": 8088,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_net_bind_service",
+            "cap_net_raw",
+            "cap_sys_chroot",
+            "cap_mknod",
+            "cap_audit_write",
+            "cap_setfcap+eip"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "QEMU",
+        "ansible_uptime_seconds": 6536,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "podman",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2020-12-04 19:37:10,331 p=540 u=root n=ansible | localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_vendor": "SeaBIOS",
+        "ansible_bios_version": "1.13.0-3.fc33",
+        "ansible_board_asset_tag": "NA",
+        "ansible_board_name": "NA",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "NA",
+        "ansible_board_version": "NA",
+        "ansible_chassis_asset_tag": "NA",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "QEMU",
+        "ansible_chassis_version": "pc-q35-5.1",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_date_time": {
+            "date": "2020-12-04",
+            "day": "04",
+            "epoch": "1607110630",
+            "hour": "19",
+            "iso8601": "2020-12-04T19:37:10Z",
+            "iso8601_basic": "20201204T193710140857",
+            "iso8601_basic_short": "20201204T193710",
+            "iso8601_micro": "2020-12-04T19:37:10.140857Z",
+            "minute": "37",
+            "month": "12",
+            "second": "10",
+            "time": "19:37:10",
+            "tz": "UTC",
+            "tz_offset": "+0000",
+            "weekday": "Friday",
+            "weekday_number": "5",
+            "weeknumber": "48",
+            "year": "2020"
+        },
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {}
+        },
+        "ansible_devices": {
+            "sr0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "QEMU DVD-ROM",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "QEMU",
+                "virtual": 1
+            },
+            "vda": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2097152",
+                        "sectorsize": 512,
+                        "size": "1.00 GB",
+                        "start": "2048",
+                        "uuid": null
+                    },
+                    "vda2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "16566272",
+                        "sectorsize": 512,
+                        "size": "7.90 GB",
+                        "start": "2099200",
+                        "uuid": null
+                    },
+                    "vda3": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "1054867456",
+                        "sectorsize": 512,
+                        "size": "503.00 GB",
+                        "start": "18665472",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1073741824",
+                "sectorsize": "512",
+                "size": "512.00 GB",
+                "support_discard": "512",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.3",
+        "ansible_dns": {
+            "nameservers": [
+                "1.1.1.1",
+                "8.8.8.8"
+            ],
+            "search": [
+                "mordor.kubernautics.io"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_env": {
+            "BUILDAH_ISOLATION": "chroot",
+            "HISTCONTROL": "ignoredups",
+            "HISTSIZE": "1000",
+            "HOME": "/root",
+            "HOSTNAME": "",
+            "LANG": "C.utf8",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "root",
+            "MAIL": "/var/spool/mail/root",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/platform/bin:/root/platform/bin:/root/platform/bin",
+            "PWD": "/root/platform/iac/sparta-vpc",
+            "SHELL": "/bin/bash",
+            "SHLVL": "4",
+            "TERM": "screen",
+            "TMUX": "/tmp//tmux-0/default,29,0",
+            "TMUX_PANE": "%0",
+            "USER": "root",
+            "_": "/usr/bin/python3",
+            "container": "podman",
+            "varVerKoffer": "4.6.6",
+            "varVerKonductor": "4.6.6",
+            "varVerOpenshift": "4.6.6",
+            "varVerTpdk": "4.6.6",
+            "versOCP": "4.6.6"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "f413cc0f6f98",
+        "ansible_hostname": "f413cc0f6f98",
+        "ansible_hostnqn": "",
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-240.el8.x86_64",
+        "ansible_kernel_version": "#1 SMP Wed Sep 23 05:13:10 EDT 2020",
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_machine": "x86_64",
+        "ansible_memfree_mb": 4109,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 6907,
+                "used": 860
+            },
+            "real": {
+                "free": 4109,
+                "total": 7767,
+                "used": 3658
+            },
+            "swap": {
+                "cached": 0,
+                "free": 8088,
+                "total": 8088,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 7767,
+        "ansible_mounts": [
+            {
+                "block_available": 129844944,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949104,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560329,
+                "inode_total": 263716864,
+                "inode_used": 156535,
+                "mount": "/root/.aws",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844890624,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 129844944,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949104,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560329,
+                "inode_total": 263716864,
+                "inode_used": 156535,
+                "mount": "/root/platform/iac/sparta-vpc",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844890624,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "f413cc0f6f98",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "1",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "2",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "3",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 4,
+        "ansible_processor_nproc": 4,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 4,
+        "ansible_product_name": "Standard PC (Q35 + ICH9, 2009)",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "c371910d-d209-46f5-a2dd-e5078eb264a1",
+        "ansible_product_version": "pc-q35-5.1",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_swapfree_mb": 8088,
+        "ansible_swaptotal_mb": 8088,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_net_bind_service",
+            "cap_net_raw",
+            "cap_sys_chroot",
+            "cap_mknod",
+            "cap_audit_write",
+            "cap_setfcap+eip"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "QEMU",
+        "ansible_uptime_seconds": 6543,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "podman",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2020-12-04 19:37:42,195 p=580 u=root n=ansible | localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_apparmor": {
+            "status": "disabled"
+        },
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "04/01/2014",
+        "ansible_bios_vendor": "SeaBIOS",
+        "ansible_bios_version": "1.13.0-3.fc33",
+        "ansible_board_asset_tag": "NA",
+        "ansible_board_name": "NA",
+        "ansible_board_serial": "NA",
+        "ansible_board_vendor": "NA",
+        "ansible_board_version": "NA",
+        "ansible_chassis_asset_tag": "NA",
+        "ansible_chassis_serial": "NA",
+        "ansible_chassis_vendor": "QEMU",
+        "ansible_chassis_version": "pc-q35-5.1",
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_date_time": {
+            "date": "2020-12-04",
+            "day": "04",
+            "epoch": "1607110661",
+            "hour": "19",
+            "iso8601": "2020-12-04T19:37:41Z",
+            "iso8601_basic": "20201204T193741982210",
+            "iso8601_basic_short": "20201204T193741",
+            "iso8601_micro": "2020-12-04T19:37:41.982210Z",
+            "minute": "37",
+            "month": "12",
+            "second": "41",
+            "time": "19:37:41",
+            "tz": "UTC",
+            "tz_offset": "+0000",
+            "weekday": "Friday",
+            "weekday_number": "5",
+            "weeknumber": "48",
+            "year": "2020"
+        },
+        "ansible_device_links": {
+            "ids": {},
+            "labels": {},
+            "masters": {},
+            "uuids": {}
+        },
+        "ansible_devices": {
+            "sr0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "QEMU DVD-ROM",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "QEMU",
+                "virtual": 1
+            },
+            "vda": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": null,
+                "partitions": {
+                    "vda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "2097152",
+                        "sectorsize": 512,
+                        "size": "1.00 GB",
+                        "start": "2048",
+                        "uuid": null
+                    },
+                    "vda2": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "16566272",
+                        "sectorsize": 512,
+                        "size": "7.90 GB",
+                        "start": "2099200",
+                        "uuid": null
+                    },
+                    "vda3": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": []
+                        },
+                        "sectors": "1054867456",
+                        "sectorsize": 512,
+                        "size": "503.00 GB",
+                        "start": "18665472",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "mq-deadline",
+                "sectors": "1073741824",
+                "sectorsize": "512",
+                "size": "512.00 GB",
+                "support_discard": "512",
+                "vendor": "0x1af4",
+                "virtual": 1
+            }
+        },
+        "ansible_distribution": "RedHat",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/redhat-release",
+        "ansible_distribution_file_search_string": "Red Hat",
+        "ansible_distribution_file_variety": "RedHat",
+        "ansible_distribution_major_version": "8",
+        "ansible_distribution_release": "Ootpa",
+        "ansible_distribution_version": "8.3",
+        "ansible_dns": {
+            "nameservers": [
+                "1.1.1.1",
+                "8.8.8.8"
+            ],
+            "search": [
+                "mordor.kubernautics.io"
+            ]
+        },
+        "ansible_domain": "",
+        "ansible_effective_group_id": 0,
+        "ansible_effective_user_id": 0,
+        "ansible_env": {
+            "BUILDAH_ISOLATION": "chroot",
+            "HISTCONTROL": "ignoredups",
+            "HISTSIZE": "1000",
+            "HOME": "/root",
+            "HOSTNAME": "",
+            "LANG": "C.utf8",
+            "LESSOPEN": "||/usr/bin/lesspipe.sh %s",
+            "LOGNAME": "root",
+            "MAIL": "/var/spool/mail/root",
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/platform/bin:/root/platform/bin:/root/platform/bin",
+            "PWD": "/root/platform/iac/sparta-vpc",
+            "SHELL": "/bin/bash",
+            "SHLVL": "4",
+            "TERM": "screen",
+            "TMUX": "/tmp//tmux-0/default,29,0",
+            "TMUX_PANE": "%0",
+            "USER": "root",
+            "_": "/usr/bin/python3",
+            "container": "podman",
+            "varVerKoffer": "4.6.6",
+            "varVerKonductor": "4.6.6",
+            "varVerOpenshift": "4.6.6",
+            "varVerTpdk": "4.6.6",
+            "versOCP": "4.6.6"
+        },
+        "ansible_fibre_channel_wwn": [],
+        "ansible_fips": false,
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "f413cc0f6f98",
+        "ansible_hostname": "f413cc0f6f98",
+        "ansible_hostnqn": "",
+        "ansible_is_chroot": false,
+        "ansible_iscsi_iqn": "",
+        "ansible_kernel": "4.18.0-240.el8.x86_64",
+        "ansible_kernel_version": "#1 SMP Wed Sep 23 05:13:10 EDT 2020",
+        "ansible_local": {},
+        "ansible_lsb": {},
+        "ansible_machine": "x86_64",
+        "ansible_memfree_mb": 4113,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 6911,
+                "used": 856
+            },
+            "real": {
+                "free": 4113,
+                "total": 7767,
+                "used": 3654
+            },
+            "swap": {
+                "cached": 0,
+                "free": 8088,
+                "total": 8088,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 7767,
+        "ansible_mounts": [
+            {
+                "block_available": 129844946,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949102,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560328,
+                "inode_total": 263716864,
+                "inode_used": 156536,
+                "mount": "/root/.aws",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844898816,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            },
+            {
+                "block_available": 129844946,
+                "block_size": 4096,
+                "block_total": 131794048,
+                "block_used": 1949102,
+                "device": "/dev/vda3",
+                "fstype": "xfs",
+                "inode_available": 263560328,
+                "inode_total": 263716864,
+                "inode_used": 156536,
+                "mount": "/root/platform/iac/sparta-vpc",
+                "options": "rw,seclabel,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota,bind",
+                "size_available": 531844898816,
+                "size_total": 539828420608,
+                "uuid": "N/A"
+            }
+        ],
+        "ansible_nodename": "f413cc0f6f98",
+        "ansible_os_family": "RedHat",
+        "ansible_pkg_mgr": "dnf",
+        "ansible_proc_cmdline": {
+            "BOOT_IMAGE": "(hd0,msdos1)/vmlinuz-4.18.0-240.el8.x86_64",
+            "crashkernel": "auto",
+            "quiet": true,
+            "resume": "UUID=f38c97e4-7a48-4227-80b3-a412ca2fa656",
+            "rhgb": true,
+            "ro": true,
+            "root": "UUID=a83f0242-7376-400d-a235-4f6eae3cb288"
+        },
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "1",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "2",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)",
+            "3",
+            "GenuineIntel",
+            "Intel Xeon Processor (Cascadelake)"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 4,
+        "ansible_processor_nproc": 4,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 4,
+        "ansible_product_name": "Standard PC (Q35 + ICH9, 2009)",
+        "ansible_product_serial": "NA",
+        "ansible_product_uuid": "c371910d-d209-46f5-a2dd-e5078eb264a1",
+        "ansible_product_version": "pc-q35-5.1",
+        "ansible_python": {
+            "executable": "/usr/bin/python3",
+            "has_sslcontext": true,
+            "type": "cpython",
+            "version": {
+                "major": 3,
+                "micro": 8,
+                "minor": 6,
+                "releaselevel": "final",
+                "serial": 0
+            },
+            "version_info": [
+                3,
+                6,
+                8,
+                "final",
+                0
+            ]
+        },
+        "ansible_python_version": "3.6.8",
+        "ansible_real_group_id": 0,
+        "ansible_real_user_id": 0,
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        },
+        "ansible_selinux_python_present": false,
+        "ansible_service_mgr": "systemd",
+        "ansible_swapfree_mb": 8088,
+        "ansible_swaptotal_mb": 8088,
+        "ansible_system": "Linux",
+        "ansible_system_capabilities": [
+            "cap_chown",
+            "cap_dac_override",
+            "cap_fowner",
+            "cap_fsetid",
+            "cap_kill",
+            "cap_setgid",
+            "cap_setuid",
+            "cap_setpcap",
+            "cap_net_bind_service",
+            "cap_net_raw",
+            "cap_sys_chroot",
+            "cap_mknod",
+            "cap_audit_write",
+            "cap_setfcap+eip"
+        ],
+        "ansible_system_capabilities_enforced": "True",
+        "ansible_system_vendor": "QEMU",
+        "ansible_uptime_seconds": 6575,
+        "ansible_user_dir": "/root",
+        "ansible_user_gecos": "root",
+        "ansible_user_gid": 0,
+        "ansible_user_id": "root",
+        "ansible_user_shell": "/bin/bash",
+        "ansible_user_uid": 0,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "podman",
+        "gather_subset": [
+            "all"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
+2020-12-04 19:39:02,865 p=638 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:39:02,865 p=638 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:39:02,875 p=638 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:39:03,221 p=638 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:39:03,224 p=638 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:39:03,224 p=638 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:39:03,226 p=638 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:39:03,235 p=638 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 19:39:03,235 p=638 u=root n=ansible | Friday 04 December 2020  19:39:03 +0000 (0:00:00.020)       0:00:00.020 ******* 
+2020-12-04 19:39:04,012 p=638 u=root n=ansible | ok: [localhost]
+2020-12-04 19:39:04,043 p=638 u=root n=ansible | TASK [Konductor | Sparta | VPC | file | Create ~/.aws] **************************************************************************************************************************************************************
+2020-12-04 19:39:04,043 p=638 u=root n=ansible | Friday 04 December 2020  19:39:04 +0000 (0:00:00.808)       0:00:00.828 ******* 
+2020-12-04 19:39:04,411 p=638 u=root n=ansible | ok: [localhost]
+2020-12-04 19:39:04,428 p=638 u=root n=ansible | TASK [Konductor | Sparta | VPC | template | Terraform Vars & aws credentials] ***************************************************************************************************************************************
+2020-12-04 19:39:04,428 p=638 u=root n=ansible | Friday 04 December 2020  19:39:04 +0000 (0:00:00.384)       0:00:01.213 ******* 
+2020-12-04 19:39:05,158 p=638 u=root n=ansible | changed: [localhost] => (item={'mode': '600', 'name': 'templates/aws/credentials.j2', 'dest': '/root/.aws/credentials'})
+2020-12-04 19:39:05,179 p=638 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 19:39:05,180 p=638 u=root n=ansible | localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-12-04 19:39:05,180 p=638 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 1 seconds
+2020-12-04 19:39:05,180 p=638 u=root n=ansible | Friday 04 December 2020  19:39:05 +0000 (0:00:00.751)       0:00:01.965 ******* 
+2020-12-04 19:39:05,180 p=638 u=root n=ansible | =============================================================================== 
+2020-12-04 19:49:56,859 p=915 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 19:49:56,859 p=915 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 19:49:56,869 p=915 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 19:49:57,188 p=915 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 19:49:57,191 p=915 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:49:57,191 p=915 u=root n=ansible | skipping: no hosts matched
+2020-12-04 19:49:57,192 p=915 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:49:57,211 p=915 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 19:49:57,211 p=915 u=root n=ansible | Friday 04 December 2020  19:49:57 +0000 (0:00:00.029)       0:00:00.029 ******* 
+2020-12-04 19:49:58,009 p=915 u=root n=ansible | ok: [localhost]
+2020-12-04 19:49:58,041 p=915 u=root n=ansible | TASK [Konductor | Sparta | VPC | file | Create ~/.aws] **************************************************************************************************************************************************************
+2020-12-04 19:49:58,041 p=915 u=root n=ansible | Friday 04 December 2020  19:49:58 +0000 (0:00:00.829)       0:00:00.859 ******* 
+2020-12-04 19:49:58,418 p=915 u=root n=ansible | ok: [localhost]
+2020-12-04 19:49:58,434 p=915 u=root n=ansible | TASK [Konductor | Sparta | VPC | template | Terraform Vars & aws credentials] ***************************************************************************************************************************************
+2020-12-04 19:49:58,434 p=915 u=root n=ansible | Friday 04 December 2020  19:49:58 +0000 (0:00:00.393)       0:00:01.253 ******* 
+2020-12-04 19:49:59,170 p=915 u=root n=ansible | ok: [localhost] => (item={'mode': '600', 'name': 'templates/aws/credentials.j2', 'dest': '/root/.aws/credentials'})
+2020-12-04 19:49:59,192 p=915 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 19:49:59,199 p=915 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 19:49:59,199 p=915 u=root n=ansible | Friday 04 December 2020  19:49:59 +0000 (0:00:00.764)       0:00:02.017 ******* 
+2020-12-04 19:49:59,683 p=915 u=root n=ansible | ok: [localhost]
+2020-12-04 19:49:59,700 p=915 u=root n=ansible | TASK [Create VPC using CloudFormation] ******************************************************************************************************************************************************************************
+2020-12-04 19:49:59,700 p=915 u=root n=ansible | Friday 04 December 2020  19:49:59 +0000 (0:00:00.501)       0:00:02.518 ******* 
+2020-12-04 19:50:01,601 p=915 u=root n=ansible | ok: [localhost]
+2020-12-04 19:50:01,613 p=915 u=root n=ansible | TASK [Debug output for VPC creation] ********************************************************************************************************************************************************************************
+2020-12-04 19:50:01,613 p=915 u=root n=ansible | Friday 04 December 2020  19:50:01 +0000 (0:00:01.912)       0:00:04.431 ******* 
+2020-12-04 19:50:01,650 p=915 u=root n=ansible | ok: [localhost] => {
+    "r_cf_vpc": {
+        "changed": false,
+        "failed": false,
+        "output": "Stack is already up-to-date.",
+        "stack_outputs": {
+            "PrivateSubnetIds": "subnet-0f9196f5e92d64838,subnet-04a6f794fae8acbfa,subnet-0e5eb10f571c87cf1",
+            "PublicSubnetIds": "subnet-07ee3e7395efe6123,subnet-00da9aae6df03b5fd,subnet-0e8f9f18957ec81ab",
+            "VpcId": "vpc-0cb5c48c7e84d6688"
+        },
+        "stack_resources": [
+            {
+                "last_updated_time": "2020-12-04T19:46:49.847000+00:00",
+                "logical_resource_id": "EIP1",
+                "physical_resource_id": "3.32.104.89",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.180000+00:00",
+                "logical_resource_id": "EIP2",
+                "physical_resource_id": "96.127.58.84",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.109000+00:00",
+                "logical_resource_id": "EIP3",
+                "physical_resource_id": "52.222.2.149",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:29.628000+00:00",
+                "logical_resource_id": "GatewayToInternet",
+                "physical_resource_id": "falco-Gatew-J1LO8N9TWZ8Y",
+                "resource_type": "AWS::EC2::VPCGatewayAttachment",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:11.600000+00:00",
+                "logical_resource_id": "InternetGateway",
+                "physical_resource_id": "igw-0a7aa69f09563cada",
+                "resource_type": "AWS::EC2::InternetGateway",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:32.978000+00:00",
+                "logical_resource_id": "PrivateRouteTable1",
+                "physical_resource_id": "rtb-0f1d55e1e351e188f",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:33.410000+00:00",
+                "logical_resource_id": "PrivateRouteTable2",
+                "physical_resource_id": "rtb-08df80260d3804ef5",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:33.367000+00:00",
+                "logical_resource_id": "PrivateRouteTable3",
+                "physical_resource_id": "rtb-0341063c5b5d39601",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.347000+00:00",
+                "logical_resource_id": "PrivateSubnet1",
+                "physical_resource_id": "subnet-0f9196f5e92d64838",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.449000+00:00",
+                "logical_resource_id": "PrivateSubnet2",
+                "physical_resource_id": "subnet-04a6f794fae8acbfa",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.390000+00:00",
+                "logical_resource_id": "PrivateSubnet3",
+                "physical_resource_id": "subnet-0e5eb10f571c87cf1",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.580000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation1",
+                "physical_resource_id": "rtbassoc-084d530014e149a53",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:51.326000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation2",
+                "physical_resource_id": "rtbassoc-0cfba6fae57c3a6e2",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.936000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation3",
+                "physical_resource_id": "rtbassoc-02c92d9fe59a6fa52",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:46.705000+00:00",
+                "logical_resource_id": "PublicRoute",
+                "physical_resource_id": "falco-Publi-1F1NSUA6VYQNX",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:14.929000+00:00",
+                "logical_resource_id": "PublicRouteTable",
+                "physical_resource_id": "rtb-0ddea85318f27ce41",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.283000+00:00",
+                "logical_resource_id": "PublicSubnet1",
+                "physical_resource_id": "subnet-07ee3e7395efe6123",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.470000+00:00",
+                "logical_resource_id": "PublicSubnet2",
+                "physical_resource_id": "subnet-00da9aae6df03b5fd",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:30.386000+00:00",
+                "logical_resource_id": "PublicSubnet3",
+                "physical_resource_id": "subnet-0e8f9f18957ec81ab",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:47.657000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation1",
+                "physical_resource_id": "rtbassoc-048532e0563152f53",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:48.311000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation2",
+                "physical_resource_id": "rtbassoc-0792474591f3429fc",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:47.797000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation3",
+                "physical_resource_id": "rtbassoc-00da86e0ddd469ef9",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.258000+00:00",
+                "logical_resource_id": "Route1",
+                "physical_resource_id": "falco-Route-ZJ4NCL35GF5K",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.892000+00:00",
+                "logical_resource_id": "Route2",
+                "physical_resource_id": "falco-Route-R1VDZ8TBI4FR",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:50.579000+00:00",
+                "logical_resource_id": "Route3",
+                "physical_resource_id": "falco-Route-15R0KV6XD0C7F",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:35.710000+00:00",
+                "logical_resource_id": "S3Endpoint",
+                "physical_resource_id": "vpce-0b56c9bc8d83dea49",
+                "resource_type": "AWS::EC2::VPCEndpoint",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:46:12.209000+00:00",
+                "logical_resource_id": "VPC",
+                "physical_resource_id": "vpc-0cb5c48c7e84d6688",
+                "resource_type": "AWS::EC2::VPC",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            }
+        ]
+    }
+}
+2020-12-04 19:50:01,662 p=915 u=root n=ansible | TASK [Create security components using CloudFormation] **************************************************************************************************************************************************************
+2020-12-04 19:50:01,662 p=915 u=root n=ansible | Friday 04 December 2020  19:50:01 +0000 (0:00:00.049)       0:00:04.480 ******* 
+2020-12-04 19:50:02,779 p=915 u=root n=ansible | ok: [localhost]
+2020-12-04 19:50:02,796 p=915 u=root n=ansible | TASK [Debug output for security components creation] ****************************************************************************************************************************************************************
+2020-12-04 19:50:02,797 p=915 u=root n=ansible | Friday 04 December 2020  19:50:02 +0000 (0:00:01.134)       0:00:05.615 ******* 
+2020-12-04 19:50:02,829 p=915 u=root n=ansible | ok: [localhost] => {
+    "r_cf_security": {
+        "changed": false,
+        "failed": false,
+        "output": "Stack is already up-to-date.",
+        "stack_outputs": {
+            "MasterInstanceProfile": "falcon-master-profile",
+            "MasterSecurityGroupId": "sg-00ead03cda80e144c",
+            "WorkerInstanceProfile": "falcon-worker-profile",
+            "WorkerSecurityGroupId": "sg-07c585555a7825dd4"
+        },
+        "stack_resources": [
+            {
+                "last_updated_time": "2020-12-04T19:47:16.555000+00:00",
+                "logical_resource_id": "MasterIamRole",
+                "physical_resource_id": "falcon-master-role",
+                "resource_type": "AWS::IAM::Role",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.822000+00:00",
+                "logical_resource_id": "MasterIngressEtcd",
+                "physical_resource_id": "MasterIngressEtcd",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.838000+00:00",
+                "logical_resource_id": "MasterIngressGeneve",
+                "physical_resource_id": "MasterIngressGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.877000+00:00",
+                "logical_resource_id": "MasterIngressIngressServices",
+                "physical_resource_id": "MasterIngressIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.369000+00:00",
+                "logical_resource_id": "MasterIngressIngressServicesUDP",
+                "physical_resource_id": "MasterIngressIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.141000+00:00",
+                "logical_resource_id": "MasterIngressInternal",
+                "physical_resource_id": "MasterIngressInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.912000+00:00",
+                "logical_resource_id": "MasterIngressInternalUDP",
+                "physical_resource_id": "MasterIngressInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.572000+00:00",
+                "logical_resource_id": "MasterIngressKube",
+                "physical_resource_id": "MasterIngressKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.765000+00:00",
+                "logical_resource_id": "MasterIngressVxlan",
+                "physical_resource_id": "MasterIngressVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.426000+00:00",
+                "logical_resource_id": "MasterIngressWorkerGeneve",
+                "physical_resource_id": "MasterIngressWorkerGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.198000+00:00",
+                "logical_resource_id": "MasterIngressWorkerIngressServices",
+                "physical_resource_id": "MasterIngressWorkerIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.410000+00:00",
+                "logical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+                "physical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.957000+00:00",
+                "logical_resource_id": "MasterIngressWorkerInternal",
+                "physical_resource_id": "MasterIngressWorkerInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.160000+00:00",
+                "logical_resource_id": "MasterIngressWorkerInternalUDP",
+                "physical_resource_id": "MasterIngressWorkerInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.095000+00:00",
+                "logical_resource_id": "MasterIngressWorkerKube",
+                "physical_resource_id": "MasterIngressWorkerKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.223000+00:00",
+                "logical_resource_id": "MasterIngressWorkerVxlan",
+                "physical_resource_id": "MasterIngressWorkerVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:49:19.461000+00:00",
+                "logical_resource_id": "MasterInstanceProfile",
+                "physical_resource_id": "falcon-master-profile",
+                "resource_type": "AWS::IAM::InstanceProfile",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:05.271000+00:00",
+                "logical_resource_id": "MasterSecurityGroup",
+                "physical_resource_id": "sg-00ead03cda80e144c",
+                "resource_type": "AWS::EC2::SecurityGroup",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:16.544000+00:00",
+                "logical_resource_id": "WorkerIamRole",
+                "physical_resource_id": "falcon-worker-role",
+                "resource_type": "AWS::IAM::Role",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.445000+00:00",
+                "logical_resource_id": "WorkerIngressGeneve",
+                "physical_resource_id": "WorkerIngressGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.254000+00:00",
+                "logical_resource_id": "WorkerIngressIngressServices",
+                "physical_resource_id": "WorkerIngressIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.296000+00:00",
+                "logical_resource_id": "WorkerIngressIngressServicesUDP",
+                "physical_resource_id": "WorkerIngressIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.136000+00:00",
+                "logical_resource_id": "WorkerIngressInternal",
+                "physical_resource_id": "WorkerIngressInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.388000+00:00",
+                "logical_resource_id": "WorkerIngressInternalUDP",
+                "physical_resource_id": "WorkerIngressInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.460000+00:00",
+                "logical_resource_id": "WorkerIngressKube",
+                "physical_resource_id": "WorkerIngressKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.259000+00:00",
+                "logical_resource_id": "WorkerIngressMasterGeneve",
+                "physical_resource_id": "WorkerIngressMasterGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.284000+00:00",
+                "logical_resource_id": "WorkerIngressMasterIngressServices",
+                "physical_resource_id": "WorkerIngressMasterIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.813000+00:00",
+                "logical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+                "physical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.169000+00:00",
+                "logical_resource_id": "WorkerIngressMasterInternal",
+                "physical_resource_id": "WorkerIngressMasterInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.028000+00:00",
+                "logical_resource_id": "WorkerIngressMasterInternalUDP",
+                "physical_resource_id": "WorkerIngressMasterInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:07.941000+00:00",
+                "logical_resource_id": "WorkerIngressMasterVxlan",
+                "physical_resource_id": "WorkerIngressMasterVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.223000+00:00",
+                "logical_resource_id": "WorkerIngressVxlan",
+                "physical_resource_id": "WorkerIngressVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:08.101000+00:00",
+                "logical_resource_id": "WorkerIngressWorkerKube",
+                "physical_resource_id": "WorkerIngressWorkerKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:49:19.520000+00:00",
+                "logical_resource_id": "WorkerInstanceProfile",
+                "physical_resource_id": "falcon-worker-profile",
+                "resource_type": "AWS::IAM::InstanceProfile",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T19:47:05.601000+00:00",
+                "logical_resource_id": "WorkerSecurityGroup",
+                "physical_resource_id": "sg-07c585555a7825dd4",
+                "resource_type": "AWS::EC2::SecurityGroup",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            }
+        ]
+    }
+}
+2020-12-04 19:50:02,845 p=915 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 19:50:02,845 p=915 u=root n=ansible | localhost                  : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-12-04 19:50:02,846 p=915 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 5 seconds
+2020-12-04 19:50:02,846 p=915 u=root n=ansible | Friday 04 December 2020  19:50:02 +0000 (0:00:00.048)       0:00:05.664 ******* 
+2020-12-04 19:50:02,846 p=915 u=root n=ansible | =============================================================================== 

@@ -4,13 +4,13 @@
 # Required Variables
 ###############################################################################
 
-cluster_name: example
-base_domain: redhat.com
-infrastructure_name: example
+cluster_name: falcon 
+base_domain: millenium.io
+infrastructure_name: falcon
 
 hosted_zone_name: "{{ base_domain }}"
 
-rhcos_ami: ami-0f4ecf819275850dd
+rhcos_ami: ami-a1f6cec0
 
 ###############################################################################
 # Optional Variables

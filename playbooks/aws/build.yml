@@ -1,7 +1,13 @@
----
-
-- hosts: localhost
+#!/usr/local/bin/ansible-playbook --inventory=inventory.yaml
+- name: 'Konductor | Sparta | VPC'
+  hosts: localhost
+  vars:
+    module: "setup"
+    ansible_name_module: " Konductor | Sparta | VPC"
+  vars_files:
+    - vars/aws.yml
   tasks:
+
     - name: Create VPC using CloudFormation
       cloudformation:
         stack_name: "{{ infrastructure_name }}-vpc"
@@ -17,7 +23,6 @@
     - name: Debug output for VPC creation
       debug:
         var: r_cf_vpc
-
 
     - name: Create security components using CloudFormation
       cloudformation:

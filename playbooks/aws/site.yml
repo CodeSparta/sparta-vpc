@@ -1,0 +1,11 @@
+#!/usr/local/bin/ansible-playbook --inventory=inventory.yaml
+- name: 'Konductor | Sparta | VPC'
+  hosts: konductor
+  vars:
+    module: "vpc"
+    ansible_name_module: "Konductor | Sparta | {{ module }}"
+  vars_files:
+    - vars/aws.yml
+
+- import_playbook: setup.yml
+- import_playbook: build.yml
