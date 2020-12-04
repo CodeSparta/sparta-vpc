@@ -77,7 +77,7 @@ ansible-playbook -e @vars/aws.yml playbooks/aws/purge-stack.yaml -v
 mkdir sparta-vpc
 ```
 ```
-podman run -it --rm -v $(pwd)/devkit-vpc:/clone:z \
+podman run -it --rm -v $(pwd)/sparta-vpc:/clone:z \
   quay.io/cloudctl/git --branch master https://github.com/CodeSparta/prometheus.git
 ```
 ```
