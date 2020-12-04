@@ -84,7 +84,7 @@ podman run -it --rm -v $(pwd)/sparta-vpc:/clone:z \
 cd sparta-vpc
 ```
 ```
-vi playbook/aws/vars/aws.yml
+vi playbooks/aws/vars/aws.yml
 ```
 ```
 ./build-vpc.sh -vv -e aws_cloud_region=us-gov-west-1 -e aws_access_key=xxxxxxxxxxxxx -e aws_secret_key=XXXXXXXXXXXXXXXXX
