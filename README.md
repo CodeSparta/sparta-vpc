@@ -64,7 +64,7 @@ mkdir sparta-vpc
 ```
 ```
 podman run -it --rm -v $(pwd)/sparta-vpc:/clone:z \
-  quay.io/cloudctl/git --branch master https://github.com/CodeSparta/sparta-vpc.git
+  quay.io/cloudctl/git https://github.com/CodeSparta/sparta-vpc.git
 ```
 ```
 cd sparta-vpc
