@@ -1,3 +1,4 @@
+status: ALPHA
 # OpenShift 4 UPI
 
 A repository of artifacts to improve the experience of install OpenShift 4
