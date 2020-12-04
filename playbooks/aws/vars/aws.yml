@@ -4,9 +4,9 @@
 # Required Variables
 ###############################################################################
 
-cluster_name: falcon 
-base_domain: millenium.io
-infrastructure_name: falcon
+cluster_name: example
+base_domain: redhat.io
+infrastructure_name: example
 
 hosted_zone_name: "{{ base_domain }}"
 

@@ -56,23 +56,8 @@ subnet_bits: 12
 allowed_bootstrap_ssh_cidr: 0.0.0.0/0
 
 ```
-
-Execute the playbook:
-
-```bash
-ansible-playbook -e @vars/aws.yml playbooks/aws/playbook.yml -v
-```
-
-Purge the Cloudformation stacks:
-
-```bash
-ansible-playbook -e @vars/aws.yml playbooks/aws/purge-stack.yaml -v
-```
-
-[1]: https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-user-infra.html
-
-
-########### WIP DOCS
+----------------------------------------------------
+Build Sparta VPC:
 ```
 mkdir sparta-vpc
 ```
@@ -87,5 +72,14 @@ cd sparta-vpc
 vi playbooks/aws/vars/aws.yml
 ```
 ```
-./build-vpc.sh -vv -e aws_cloud_region=us-gov-west-1 -e aws_access_key=xxxxxxxxxxxxx -e aws_secret_key=XXXXXXXXXXXXXXXXX
+./build-vpc-aws.sh -vv -e aws_cloud_region=us-gov-west-1 -e aws_access_key=xxxxxxxxxxxxx -e aws_secret_key=XXXXXXXXXXXXXXXXX
 ```
+
+----------------------------------------------------
+Destroy Sparta VPC:
+
+```bash
+./destroy-vpc-aws.sh
+```
+
+[1]: https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-user-infra.html

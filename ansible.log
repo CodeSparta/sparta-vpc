@@ -1759,3 +1759,1578 @@ MSG:
 2020-12-04 19:50:02,846 p=915 u=root n=ansible | Playbook run took 0 days, 0 hours, 0 minutes, 5 seconds
 2020-12-04 19:50:02,846 p=915 u=root n=ansible | Friday 04 December 2020  19:50:02 +0000 (0:00:00.048)       0:00:05.664 ******* 
 2020-12-04 19:50:02,846 p=915 u=root n=ansible | =============================================================================== 
+2020-12-04 20:06:32,681 p=1 u=root n=ansible | ansible-playbook 2.10.3
+  config file = /root/platform/iac/sparta-vpc/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.8 (default, Aug 18 2020, 08:33:21) [GCC 8.3.1 20191121 (Red Hat 8.3.1-5)]
+2020-12-04 20:06:32,681 p=1 u=root n=ansible | Using /root/platform/iac/sparta-vpc/ansible.cfg as config file
+2020-12-04 20:06:32,691 p=1 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 20:06:32,691 p=1 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 20:06:32,701 p=1 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 20:06:32,958 p=1 u=root n=ansible | redirecting (type: modules) ansible.builtin.cloudformation to amazon.aws.cloudformation
+2020-12-04 20:06:32,970 p=1 u=root n=ansible | redirecting (type: modules) ansible.builtin.cloudformation to amazon.aws.cloudformation
+2020-12-04 20:06:32,972 p=1 u=root n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2020-12-04 20:06:32,973 p=1 u=root n=ansible | redirecting (type: callback) ansible.builtin.debug to ansible.posix.debug
+2020-12-04 20:06:33,015 p=1 u=root n=ansible | redirecting (type: callback) ansible.builtin.timer to ansible.posix.timer
+2020-12-04 20:06:33,017 p=1 u=root n=ansible | redirecting (type: callback) ansible.builtin.profile_tasks to ansible.posix.profile_tasks
+2020-12-04 20:06:33,023 p=1 u=root n=ansible | Skipping callback 'default', as we already have a stdout callback.
+2020-12-04 20:06:33,023 p=1 u=root n=ansible | Skipping callback 'minimal', as we already have a stdout callback.
+2020-12-04 20:06:33,023 p=1 u=root n=ansible | Skipping callback 'oneline', as we already have a stdout callback.
+2020-12-04 20:06:33,023 p=1 u=root n=ansible | PLAYBOOK: site.yml **************************************************************************************************************************************************************************************************
+2020-12-04 20:06:33,023 p=1 u=root n=ansible | 3 plays in playbooks/aws/site.yml
+2020-12-04 20:06:33,025 p=1 u=root n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: konductor
+
+2020-12-04 20:06:33,028 p=1 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 20:06:33,028 p=1 u=root n=ansible | skipping: no hosts matched
+2020-12-04 20:06:33,029 p=1 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 20:06:33,049 p=1 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 20:06:33,049 p=1 u=root n=ansible | Friday 04 December 2020  20:06:33 +0000 (0:00:00.032)       0:00:00.032 ******* 
+2020-12-04 20:06:33,826 p=1 u=root n=ansible | ok: [localhost]
+2020-12-04 20:06:33,844 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:06:33,862 p=1 u=root n=ansible | TASK [Konductor | Sparta | VPC | file | Create ~/.aws] **************************************************************************************************************************************************************
+2020-12-04 20:06:33,862 p=1 u=root n=ansible | Friday 04 December 2020  20:06:33 +0000 (0:00:00.812)       0:00:00.844 ******* 
+2020-12-04 20:06:34,254 p=1 u=root n=ansible | ok: [localhost] => {
+    "changed": false,
+    "gid": 0,
+    "group": "root",
+    "mode": "0755",
+    "owner": "root",
+    "path": "/root/.aws",
+    "size": 24,
+    "state": "directory",
+    "uid": 0
+}
+2020-12-04 20:06:34,273 p=1 u=root n=ansible | TASK [Konductor | Sparta | VPC | template | Terraform Vars & aws credentials] ***************************************************************************************************************************************
+2020-12-04 20:06:34,273 p=1 u=root n=ansible | Friday 04 December 2020  20:06:34 +0000 (0:00:00.411)       0:00:01.255 ******* 
+2020-12-04 20:06:35,015 p=1 u=root n=ansible | changed: [localhost] => (item={'mode': '600', 'name': 'templates/aws/credentials.j2', 'dest': '/root/.aws/credentials'}) => {
+    "ansible_loop_var": "item",
+    "changed": true,
+    "checksum": "08621f4b89e0ef6d89a01d580b44fd5abe65c673",
+    "dest": "/root/.aws/credentials",
+    "gid": 0,
+    "group": "root",
+    "item": {
+        "dest": "/root/.aws/credentials",
+        "mode": "600",
+        "name": "templates/aws/credentials.j2"
+    },
+    "md5sum": "4d1c2f62b33791eb2764cb1e6f105e6b",
+    "mode": "0600",
+    "owner": "root",
+    "size": 140,
+    "src": "/root/.ansible/tmp/ansible-tmp-1607112394.3146877-61-123317377263173/source",
+    "state": "file",
+    "uid": 0
+}
+2020-12-04 20:06:35,030 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:06:35,035 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:06:35,038 p=1 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 20:06:35,045 p=1 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 20:06:35,046 p=1 u=root n=ansible | Friday 04 December 2020  20:06:35 +0000 (0:00:00.772)       0:00:02.028 ******* 
+2020-12-04 20:06:35,533 p=1 u=root n=ansible | ok: [localhost]
+2020-12-04 20:06:35,549 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:06:35,554 p=1 u=root n=ansible | TASK [Create VPC using CloudFormation] ******************************************************************************************************************************************************************************
+2020-12-04 20:06:35,555 p=1 u=root n=ansible | Friday 04 December 2020  20:06:35 +0000 (0:00:00.508)       0:00:02.537 ******* 
+2020-12-04 20:06:35,613 p=120 u=root n=ansible | redirecting (type: modules) ansible.builtin.cloudformation to amazon.aws.cloudformation
+2020-12-04 20:07:39,703 p=1 u=root n=ansible | changed: [localhost] => {
+    "changed": true,
+    "events": [
+        "StackEvent AWS::CloudFormation::Stack falcon-vpc CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Route Route3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::EIP EIP1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::EIP EIP3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::EIP EIP2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Route Route1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Route Route2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Route PublicRoute CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route Route2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::EIP EIP2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route PublicRoute CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Route PublicRoute CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_COMPLETE",
+        "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_COMPLETE",
+        "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_COMPLETE",
+        "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPC VPC CREATE_COMPLETE",
+        "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_COMPLETE",
+        "StackEvent AWS::EC2::VPC VPC CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::VPC VPC CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_IN_PROGRESS",
+        "StackEvent AWS::CloudFormation::Stack falcon-vpc CREATE_IN_PROGRESS"
+    ],
+    "log": [],
+    "output": "Stack CREATE complete",
+    "stack_outputs": {
+        "PrivateSubnetIds": "subnet-071427729f2e61d90,subnet-01f2ed864101a217e,subnet-026a116d5dc01c0dd",
+        "PublicSubnetIds": "subnet-068385051d3c8c7a7,subnet-0f4647df705bd5ca9,subnet-0d6ef5bcd35367372",
+        "VpcId": "vpc-025f64758ad998ff1"
+    },
+    "stack_resources": [
+        {
+            "last_updated_time": "2020-12-04T20:07:37.153000+00:00",
+            "logical_resource_id": "EIP1",
+            "physical_resource_id": "3.32.173.33",
+            "resource_type": "AWS::EC2::EIP",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:36.695000+00:00",
+            "logical_resource_id": "EIP2",
+            "physical_resource_id": "3.32.180.17",
+            "resource_type": "AWS::EC2::EIP",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:36.834000+00:00",
+            "logical_resource_id": "EIP3",
+            "physical_resource_id": "3.32.111.48",
+            "resource_type": "AWS::EC2::EIP",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:15.996000+00:00",
+            "logical_resource_id": "GatewayToInternet",
+            "physical_resource_id": "falco-Gatew-JR85NJJMA62O",
+            "resource_type": "AWS::EC2::VPCGatewayAttachment",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:06:57.796000+00:00",
+            "logical_resource_id": "InternetGateway",
+            "physical_resource_id": "igw-005f2314fa94f280f",
+            "resource_type": "AWS::EC2::InternetGateway",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:19.454000+00:00",
+            "logical_resource_id": "PrivateRouteTable1",
+            "physical_resource_id": "rtb-00ac53346fb05925f",
+            "resource_type": "AWS::EC2::RouteTable",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:19.437000+00:00",
+            "logical_resource_id": "PrivateRouteTable2",
+            "physical_resource_id": "rtb-0e485355de211d302",
+            "resource_type": "AWS::EC2::RouteTable",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:19.757000+00:00",
+            "logical_resource_id": "PrivateRouteTable3",
+            "physical_resource_id": "rtb-043e5ea5ef5dab9c5",
+            "resource_type": "AWS::EC2::RouteTable",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:16.800000+00:00",
+            "logical_resource_id": "PrivateSubnet1",
+            "physical_resource_id": "subnet-071427729f2e61d90",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:16.668000+00:00",
+            "logical_resource_id": "PrivateSubnet2",
+            "physical_resource_id": "subnet-01f2ed864101a217e",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:16.766000+00:00",
+            "logical_resource_id": "PrivateSubnet3",
+            "physical_resource_id": "subnet-026a116d5dc01c0dd",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:36.960000+00:00",
+            "logical_resource_id": "PrivateSubnetRouteTableAssociation1",
+            "physical_resource_id": "rtbassoc-084bca3d460347919",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:37.008000+00:00",
+            "logical_resource_id": "PrivateSubnetRouteTableAssociation2",
+            "physical_resource_id": "rtbassoc-015b8eebdeb9d672c",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:37.316000+00:00",
+            "logical_resource_id": "PrivateSubnetRouteTableAssociation3",
+            "physical_resource_id": "rtbassoc-06cd4886d1f1ede5e",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:33.261000+00:00",
+            "logical_resource_id": "PublicRoute",
+            "physical_resource_id": "falco-Publi-CJVLYXPX81V2",
+            "resource_type": "AWS::EC2::Route",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:01.658000+00:00",
+            "logical_resource_id": "PublicRouteTable",
+            "physical_resource_id": "rtb-0e944cb12e0a804c6",
+            "resource_type": "AWS::EC2::RouteTable",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:16.698000+00:00",
+            "logical_resource_id": "PublicSubnet1",
+            "physical_resource_id": "subnet-068385051d3c8c7a7",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:16.780000+00:00",
+            "logical_resource_id": "PublicSubnet2",
+            "physical_resource_id": "subnet-0f4647df705bd5ca9",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:17.003000+00:00",
+            "logical_resource_id": "PublicSubnet3",
+            "physical_resource_id": "subnet-0d6ef5bcd35367372",
+            "resource_type": "AWS::EC2::Subnet",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:34.178000+00:00",
+            "logical_resource_id": "PublicSubnetRouteTableAssociation1",
+            "physical_resource_id": "rtbassoc-0e0a693dffd535d7e",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:34.450000+00:00",
+            "logical_resource_id": "PublicSubnetRouteTableAssociation2",
+            "physical_resource_id": "rtbassoc-081fdd594c8d3d5e9",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:34.427000+00:00",
+            "logical_resource_id": "PublicSubnetRouteTableAssociation3",
+            "physical_resource_id": "rtbassoc-0a8d3ca8959df8cef",
+            "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:36.665000+00:00",
+            "logical_resource_id": "Route1",
+            "physical_resource_id": "falco-Route-1CIT0GRUO201Z",
+            "resource_type": "AWS::EC2::Route",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:36.581000+00:00",
+            "logical_resource_id": "Route2",
+            "physical_resource_id": "falco-Route-PQF7RH8NAR7S",
+            "resource_type": "AWS::EC2::Route",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:37.174000+00:00",
+            "logical_resource_id": "Route3",
+            "physical_resource_id": "falco-Route-G2Z1HKM0YFK8",
+            "resource_type": "AWS::EC2::Route",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:21.878000+00:00",
+            "logical_resource_id": "S3Endpoint",
+            "physical_resource_id": "vpce-0a6144e5952e242ff",
+            "resource_type": "AWS::EC2::VPCEndpoint",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:06:58.590000+00:00",
+            "logical_resource_id": "VPC",
+            "physical_resource_id": "vpc-025f64758ad998ff1",
+            "resource_type": "AWS::EC2::VPC",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        }
+    ]
+}
+2020-12-04 20:07:39,713 p=1 u=root n=ansible | TASK [Debug output for VPC creation] ********************************************************************************************************************************************************************************
+2020-12-04 20:07:39,713 p=1 u=root n=ansible | Friday 04 December 2020  20:07:39 +0000 (0:01:04.158)       0:01:06.696 ******* 
+2020-12-04 20:07:39,751 p=1 u=root n=ansible | ok: [localhost] => {
+    "r_cf_vpc": {
+        "changed": true,
+        "events": [
+            "StackEvent AWS::CloudFormation::Stack falcon-vpc CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Route Route3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::EIP EIP1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::EIP EIP3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::EIP EIP2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Route Route1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Route Route2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Route PublicRoute CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPCEndpoint S3Endpoint CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PrivateSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route Route2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::EIP EIP2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PrivateRouteTable2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SubnetRouteTableAssociation PublicSubnetRouteTableAssociation1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route PublicRoute CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Route PublicRoute CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_COMPLETE",
+            "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_COMPLETE",
+            "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_COMPLETE",
+            "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::RouteTable PublicRouteTable CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PublicSubnet1 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet3 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::Subnet PrivateSubnet2 CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPCGatewayAttachment GatewayToInternet CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPC VPC CREATE_COMPLETE",
+            "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_COMPLETE",
+            "StackEvent AWS::EC2::VPC VPC CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::VPC VPC CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::InternetGateway InternetGateway CREATE_IN_PROGRESS",
+            "StackEvent AWS::CloudFormation::Stack falcon-vpc CREATE_IN_PROGRESS"
+        ],
+        "failed": false,
+        "log": [],
+        "output": "Stack CREATE complete",
+        "stack_outputs": {
+            "PrivateSubnetIds": "subnet-071427729f2e61d90,subnet-01f2ed864101a217e,subnet-026a116d5dc01c0dd",
+            "PublicSubnetIds": "subnet-068385051d3c8c7a7,subnet-0f4647df705bd5ca9,subnet-0d6ef5bcd35367372",
+            "VpcId": "vpc-025f64758ad998ff1"
+        },
+        "stack_resources": [
+            {
+                "last_updated_time": "2020-12-04T20:07:37.153000+00:00",
+                "logical_resource_id": "EIP1",
+                "physical_resource_id": "3.32.173.33",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:36.695000+00:00",
+                "logical_resource_id": "EIP2",
+                "physical_resource_id": "3.32.180.17",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:36.834000+00:00",
+                "logical_resource_id": "EIP3",
+                "physical_resource_id": "3.32.111.48",
+                "resource_type": "AWS::EC2::EIP",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:15.996000+00:00",
+                "logical_resource_id": "GatewayToInternet",
+                "physical_resource_id": "falco-Gatew-JR85NJJMA62O",
+                "resource_type": "AWS::EC2::VPCGatewayAttachment",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:06:57.796000+00:00",
+                "logical_resource_id": "InternetGateway",
+                "physical_resource_id": "igw-005f2314fa94f280f",
+                "resource_type": "AWS::EC2::InternetGateway",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:19.454000+00:00",
+                "logical_resource_id": "PrivateRouteTable1",
+                "physical_resource_id": "rtb-00ac53346fb05925f",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:19.437000+00:00",
+                "logical_resource_id": "PrivateRouteTable2",
+                "physical_resource_id": "rtb-0e485355de211d302",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:19.757000+00:00",
+                "logical_resource_id": "PrivateRouteTable3",
+                "physical_resource_id": "rtb-043e5ea5ef5dab9c5",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:16.800000+00:00",
+                "logical_resource_id": "PrivateSubnet1",
+                "physical_resource_id": "subnet-071427729f2e61d90",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:16.668000+00:00",
+                "logical_resource_id": "PrivateSubnet2",
+                "physical_resource_id": "subnet-01f2ed864101a217e",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:16.766000+00:00",
+                "logical_resource_id": "PrivateSubnet3",
+                "physical_resource_id": "subnet-026a116d5dc01c0dd",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:36.960000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation1",
+                "physical_resource_id": "rtbassoc-084bca3d460347919",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:37.008000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation2",
+                "physical_resource_id": "rtbassoc-015b8eebdeb9d672c",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:37.316000+00:00",
+                "logical_resource_id": "PrivateSubnetRouteTableAssociation3",
+                "physical_resource_id": "rtbassoc-06cd4886d1f1ede5e",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:33.261000+00:00",
+                "logical_resource_id": "PublicRoute",
+                "physical_resource_id": "falco-Publi-CJVLYXPX81V2",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:01.658000+00:00",
+                "logical_resource_id": "PublicRouteTable",
+                "physical_resource_id": "rtb-0e944cb12e0a804c6",
+                "resource_type": "AWS::EC2::RouteTable",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:16.698000+00:00",
+                "logical_resource_id": "PublicSubnet1",
+                "physical_resource_id": "subnet-068385051d3c8c7a7",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:16.780000+00:00",
+                "logical_resource_id": "PublicSubnet2",
+                "physical_resource_id": "subnet-0f4647df705bd5ca9",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:17.003000+00:00",
+                "logical_resource_id": "PublicSubnet3",
+                "physical_resource_id": "subnet-0d6ef5bcd35367372",
+                "resource_type": "AWS::EC2::Subnet",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:34.178000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation1",
+                "physical_resource_id": "rtbassoc-0e0a693dffd535d7e",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:34.450000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation2",
+                "physical_resource_id": "rtbassoc-081fdd594c8d3d5e9",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:34.427000+00:00",
+                "logical_resource_id": "PublicSubnetRouteTableAssociation3",
+                "physical_resource_id": "rtbassoc-0a8d3ca8959df8cef",
+                "resource_type": "AWS::EC2::SubnetRouteTableAssociation",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:36.665000+00:00",
+                "logical_resource_id": "Route1",
+                "physical_resource_id": "falco-Route-1CIT0GRUO201Z",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:36.581000+00:00",
+                "logical_resource_id": "Route2",
+                "physical_resource_id": "falco-Route-PQF7RH8NAR7S",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:37.174000+00:00",
+                "logical_resource_id": "Route3",
+                "physical_resource_id": "falco-Route-G2Z1HKM0YFK8",
+                "resource_type": "AWS::EC2::Route",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:21.878000+00:00",
+                "logical_resource_id": "S3Endpoint",
+                "physical_resource_id": "vpce-0a6144e5952e242ff",
+                "resource_type": "AWS::EC2::VPCEndpoint",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:06:58.590000+00:00",
+                "logical_resource_id": "VPC",
+                "physical_resource_id": "vpc-025f64758ad998ff1",
+                "resource_type": "AWS::EC2::VPC",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            }
+        ]
+    }
+}
+2020-12-04 20:07:39,761 p=1 u=root n=ansible | TASK [Create security components using CloudFormation] **************************************************************************************************************************************************************
+2020-12-04 20:07:39,761 p=1 u=root n=ansible | Friday 04 December 2020  20:07:39 +0000 (0:00:00.047)       0:01:06.743 ******* 
+2020-12-04 20:07:39,817 p=141 u=root n=ansible | redirecting (type: modules) ansible.builtin.cloudformation to amazon.aws.cloudformation
+2020-12-04 20:10:11,920 p=1 u=root n=ansible | changed: [localhost] => {
+    "changed": true,
+    "events": [
+        "StackEvent AWS::CloudFormation::Stack falcon-security CREATE_COMPLETE",
+        "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_COMPLETE",
+        "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_COMPLETE",
+        "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::Role MasterIamRole CREATE_COMPLETE",
+        "StackEvent AWS::IAM::Role WorkerIamRole CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_COMPLETE",
+        "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::Role MasterIamRole CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::Role WorkerIamRole CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::Role WorkerIamRole CREATE_IN_PROGRESS",
+        "StackEvent AWS::IAM::Role MasterIamRole CREATE_IN_PROGRESS",
+        "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_IN_PROGRESS",
+        "StackEvent AWS::CloudFormation::Stack falcon-security CREATE_IN_PROGRESS"
+    ],
+    "log": [],
+    "output": "Stack CREATE complete",
+    "stack_outputs": {
+        "MasterInstanceProfile": "falcon-master-profile",
+        "MasterSecurityGroupId": "sg-09e70b0e5ed181081",
+        "WorkerInstanceProfile": "falcon-worker-profile",
+        "WorkerSecurityGroupId": "sg-0d620c00f891b6e90"
+    },
+    "stack_resources": [
+        {
+            "last_updated_time": "2020-12-04T20:08:03.314000+00:00",
+            "logical_resource_id": "MasterIamRole",
+            "physical_resource_id": "falcon-master-role",
+            "resource_type": "AWS::IAM::Role",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.794000+00:00",
+            "logical_resource_id": "MasterIngressEtcd",
+            "physical_resource_id": "MasterIngressEtcd",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.164000+00:00",
+            "logical_resource_id": "MasterIngressGeneve",
+            "physical_resource_id": "MasterIngressGeneve",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.609000+00:00",
+            "logical_resource_id": "MasterIngressIngressServices",
+            "physical_resource_id": "MasterIngressIngressServices",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.843000+00:00",
+            "logical_resource_id": "MasterIngressIngressServicesUDP",
+            "physical_resource_id": "MasterIngressIngressServicesUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.097000+00:00",
+            "logical_resource_id": "MasterIngressInternal",
+            "physical_resource_id": "MasterIngressInternal",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.115000+00:00",
+            "logical_resource_id": "MasterIngressInternalUDP",
+            "physical_resource_id": "MasterIngressInternalUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.765000+00:00",
+            "logical_resource_id": "MasterIngressKube",
+            "physical_resource_id": "MasterIngressKube",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.678000+00:00",
+            "logical_resource_id": "MasterIngressVxlan",
+            "physical_resource_id": "MasterIngressVxlan",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.766000+00:00",
+            "logical_resource_id": "MasterIngressWorkerGeneve",
+            "physical_resource_id": "MasterIngressWorkerGeneve",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.272000+00:00",
+            "logical_resource_id": "MasterIngressWorkerIngressServices",
+            "physical_resource_id": "MasterIngressWorkerIngressServices",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.426000+00:00",
+            "logical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+            "physical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.512000+00:00",
+            "logical_resource_id": "MasterIngressWorkerInternal",
+            "physical_resource_id": "MasterIngressWorkerInternal",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.324000+00:00",
+            "logical_resource_id": "MasterIngressWorkerInternalUDP",
+            "physical_resource_id": "MasterIngressWorkerInternalUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.366000+00:00",
+            "logical_resource_id": "MasterIngressWorkerKube",
+            "physical_resource_id": "MasterIngressWorkerKube",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.008000+00:00",
+            "logical_resource_id": "MasterIngressWorkerVxlan",
+            "physical_resource_id": "MasterIngressWorkerVxlan",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:10:06.186000+00:00",
+            "logical_resource_id": "MasterInstanceProfile",
+            "physical_resource_id": "falcon-master-profile",
+            "resource_type": "AWS::IAM::InstanceProfile",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:52.454000+00:00",
+            "logical_resource_id": "MasterSecurityGroup",
+            "physical_resource_id": "sg-09e70b0e5ed181081",
+            "resource_type": "AWS::EC2::SecurityGroup",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:08:03.180000+00:00",
+            "logical_resource_id": "WorkerIamRole",
+            "physical_resource_id": "falcon-worker-role",
+            "resource_type": "AWS::IAM::Role",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.459000+00:00",
+            "logical_resource_id": "WorkerIngressGeneve",
+            "physical_resource_id": "WorkerIngressGeneve",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.375000+00:00",
+            "logical_resource_id": "WorkerIngressIngressServices",
+            "physical_resource_id": "WorkerIngressIngressServices",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.365000+00:00",
+            "logical_resource_id": "WorkerIngressIngressServicesUDP",
+            "physical_resource_id": "WorkerIngressIngressServicesUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.259000+00:00",
+            "logical_resource_id": "WorkerIngressInternal",
+            "physical_resource_id": "WorkerIngressInternal",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:54.915000+00:00",
+            "logical_resource_id": "WorkerIngressInternalUDP",
+            "physical_resource_id": "WorkerIngressInternalUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.086000+00:00",
+            "logical_resource_id": "WorkerIngressKube",
+            "physical_resource_id": "WorkerIngressKube",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.005000+00:00",
+            "logical_resource_id": "WorkerIngressMasterGeneve",
+            "physical_resource_id": "WorkerIngressMasterGeneve",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.490000+00:00",
+            "logical_resource_id": "WorkerIngressMasterIngressServices",
+            "physical_resource_id": "WorkerIngressMasterIngressServices",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.317000+00:00",
+            "logical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+            "physical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.054000+00:00",
+            "logical_resource_id": "WorkerIngressMasterInternal",
+            "physical_resource_id": "WorkerIngressMasterInternal",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.041000+00:00",
+            "logical_resource_id": "WorkerIngressMasterInternalUDP",
+            "physical_resource_id": "WorkerIngressMasterInternalUDP",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.159000+00:00",
+            "logical_resource_id": "WorkerIngressMasterVxlan",
+            "physical_resource_id": "WorkerIngressMasterVxlan",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.271000+00:00",
+            "logical_resource_id": "WorkerIngressVxlan",
+            "physical_resource_id": "WorkerIngressVxlan",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:55.243000+00:00",
+            "logical_resource_id": "WorkerIngressWorkerKube",
+            "physical_resource_id": "WorkerIngressWorkerKube",
+            "resource_type": "AWS::EC2::SecurityGroupIngress",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:10:05.811000+00:00",
+            "logical_resource_id": "WorkerInstanceProfile",
+            "physical_resource_id": "falcon-worker-profile",
+            "resource_type": "AWS::IAM::InstanceProfile",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        },
+        {
+            "last_updated_time": "2020-12-04T20:07:52.492000+00:00",
+            "logical_resource_id": "WorkerSecurityGroup",
+            "physical_resource_id": "sg-0d620c00f891b6e90",
+            "resource_type": "AWS::EC2::SecurityGroup",
+            "status": "CREATE_COMPLETE",
+            "status_reason": null
+        }
+    ]
+}
+2020-12-04 20:10:11,932 p=1 u=root n=ansible | TASK [Debug output for security components creation] ****************************************************************************************************************************************************************
+2020-12-04 20:10:11,932 p=1 u=root n=ansible | Friday 04 December 2020  20:10:11 +0000 (0:02:32.171)       0:03:38.914 ******* 
+2020-12-04 20:10:11,977 p=1 u=root n=ansible | ok: [localhost] => {
+    "r_cf_security": {
+        "changed": true,
+        "events": [
+            "StackEvent AWS::CloudFormation::Stack falcon-security CREATE_COMPLETE",
+            "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_COMPLETE",
+            "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_COMPLETE",
+            "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::InstanceProfile MasterInstanceProfile CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::InstanceProfile WorkerInstanceProfile CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::Role MasterIamRole CREATE_COMPLETE",
+            "StackEvent AWS::IAM::Role WorkerIamRole CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressWorkerKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternal CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressMasterInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress WorkerIngressInternalUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressWorkerGeneve CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressVxlan CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressEtcd CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressKube CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServicesUDP CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroupIngress MasterIngressIngressServices CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_COMPLETE",
+            "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::Role MasterIamRole CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::Role WorkerIamRole CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroup WorkerSecurityGroup CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::Role WorkerIamRole CREATE_IN_PROGRESS",
+            "StackEvent AWS::IAM::Role MasterIamRole CREATE_IN_PROGRESS",
+            "StackEvent AWS::EC2::SecurityGroup MasterSecurityGroup CREATE_IN_PROGRESS",
+            "StackEvent AWS::CloudFormation::Stack falcon-security CREATE_IN_PROGRESS"
+        ],
+        "failed": false,
+        "log": [],
+        "output": "Stack CREATE complete",
+        "stack_outputs": {
+            "MasterInstanceProfile": "falcon-master-profile",
+            "MasterSecurityGroupId": "sg-09e70b0e5ed181081",
+            "WorkerInstanceProfile": "falcon-worker-profile",
+            "WorkerSecurityGroupId": "sg-0d620c00f891b6e90"
+        },
+        "stack_resources": [
+            {
+                "last_updated_time": "2020-12-04T20:08:03.314000+00:00",
+                "logical_resource_id": "MasterIamRole",
+                "physical_resource_id": "falcon-master-role",
+                "resource_type": "AWS::IAM::Role",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.794000+00:00",
+                "logical_resource_id": "MasterIngressEtcd",
+                "physical_resource_id": "MasterIngressEtcd",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.164000+00:00",
+                "logical_resource_id": "MasterIngressGeneve",
+                "physical_resource_id": "MasterIngressGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.609000+00:00",
+                "logical_resource_id": "MasterIngressIngressServices",
+                "physical_resource_id": "MasterIngressIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.843000+00:00",
+                "logical_resource_id": "MasterIngressIngressServicesUDP",
+                "physical_resource_id": "MasterIngressIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.097000+00:00",
+                "logical_resource_id": "MasterIngressInternal",
+                "physical_resource_id": "MasterIngressInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.115000+00:00",
+                "logical_resource_id": "MasterIngressInternalUDP",
+                "physical_resource_id": "MasterIngressInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.765000+00:00",
+                "logical_resource_id": "MasterIngressKube",
+                "physical_resource_id": "MasterIngressKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.678000+00:00",
+                "logical_resource_id": "MasterIngressVxlan",
+                "physical_resource_id": "MasterIngressVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.766000+00:00",
+                "logical_resource_id": "MasterIngressWorkerGeneve",
+                "physical_resource_id": "MasterIngressWorkerGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.272000+00:00",
+                "logical_resource_id": "MasterIngressWorkerIngressServices",
+                "physical_resource_id": "MasterIngressWorkerIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.426000+00:00",
+                "logical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+                "physical_resource_id": "MasterIngressWorkerIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.512000+00:00",
+                "logical_resource_id": "MasterIngressWorkerInternal",
+                "physical_resource_id": "MasterIngressWorkerInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.324000+00:00",
+                "logical_resource_id": "MasterIngressWorkerInternalUDP",
+                "physical_resource_id": "MasterIngressWorkerInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.366000+00:00",
+                "logical_resource_id": "MasterIngressWorkerKube",
+                "physical_resource_id": "MasterIngressWorkerKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.008000+00:00",
+                "logical_resource_id": "MasterIngressWorkerVxlan",
+                "physical_resource_id": "MasterIngressWorkerVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:10:06.186000+00:00",
+                "logical_resource_id": "MasterInstanceProfile",
+                "physical_resource_id": "falcon-master-profile",
+                "resource_type": "AWS::IAM::InstanceProfile",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:52.454000+00:00",
+                "logical_resource_id": "MasterSecurityGroup",
+                "physical_resource_id": "sg-09e70b0e5ed181081",
+                "resource_type": "AWS::EC2::SecurityGroup",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:08:03.180000+00:00",
+                "logical_resource_id": "WorkerIamRole",
+                "physical_resource_id": "falcon-worker-role",
+                "resource_type": "AWS::IAM::Role",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.459000+00:00",
+                "logical_resource_id": "WorkerIngressGeneve",
+                "physical_resource_id": "WorkerIngressGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.375000+00:00",
+                "logical_resource_id": "WorkerIngressIngressServices",
+                "physical_resource_id": "WorkerIngressIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.365000+00:00",
+                "logical_resource_id": "WorkerIngressIngressServicesUDP",
+                "physical_resource_id": "WorkerIngressIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.259000+00:00",
+                "logical_resource_id": "WorkerIngressInternal",
+                "physical_resource_id": "WorkerIngressInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:54.915000+00:00",
+                "logical_resource_id": "WorkerIngressInternalUDP",
+                "physical_resource_id": "WorkerIngressInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.086000+00:00",
+                "logical_resource_id": "WorkerIngressKube",
+                "physical_resource_id": "WorkerIngressKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.005000+00:00",
+                "logical_resource_id": "WorkerIngressMasterGeneve",
+                "physical_resource_id": "WorkerIngressMasterGeneve",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.490000+00:00",
+                "logical_resource_id": "WorkerIngressMasterIngressServices",
+                "physical_resource_id": "WorkerIngressMasterIngressServices",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.317000+00:00",
+                "logical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+                "physical_resource_id": "WorkerIngressMasterIngressServicesUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.054000+00:00",
+                "logical_resource_id": "WorkerIngressMasterInternal",
+                "physical_resource_id": "WorkerIngressMasterInternal",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.041000+00:00",
+                "logical_resource_id": "WorkerIngressMasterInternalUDP",
+                "physical_resource_id": "WorkerIngressMasterInternalUDP",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.159000+00:00",
+                "logical_resource_id": "WorkerIngressMasterVxlan",
+                "physical_resource_id": "WorkerIngressMasterVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.271000+00:00",
+                "logical_resource_id": "WorkerIngressVxlan",
+                "physical_resource_id": "WorkerIngressVxlan",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:55.243000+00:00",
+                "logical_resource_id": "WorkerIngressWorkerKube",
+                "physical_resource_id": "WorkerIngressWorkerKube",
+                "resource_type": "AWS::EC2::SecurityGroupIngress",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:10:05.811000+00:00",
+                "logical_resource_id": "WorkerInstanceProfile",
+                "physical_resource_id": "falcon-worker-profile",
+                "resource_type": "AWS::IAM::InstanceProfile",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            },
+            {
+                "last_updated_time": "2020-12-04T20:07:52.492000+00:00",
+                "logical_resource_id": "WorkerSecurityGroup",
+                "physical_resource_id": "sg-0d620c00f891b6e90",
+                "resource_type": "AWS::EC2::SecurityGroup",
+                "status": "CREATE_COMPLETE",
+                "status_reason": null
+            }
+        ]
+    }
+}
+2020-12-04 20:10:11,986 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:10:11,991 p=1 u=root n=ansible | META: ran handlers
+2020-12-04 20:10:11,992 p=1 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 20:10:11,992 p=1 u=root n=ansible | localhost                  : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-12-04 20:10:11,992 p=1 u=root n=ansible | Playbook run took 0 days, 0 hours, 3 minutes, 38 seconds
+2020-12-04 20:10:11,992 p=1 u=root n=ansible | Friday 04 December 2020  20:10:11 +0000 (0:00:00.060)       0:03:38.975 ******* 
+2020-12-04 20:10:11,992 p=1 u=root n=ansible | =============================================================================== 
+2020-12-04 20:10:56,844 p=1 u=root n=ansible | [WARNING]: Unable to parse /root/platform/iac/sparta-vpc/inventory.yaml as an inventory source
+
+2020-12-04 20:10:56,844 p=1 u=root n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-12-04 20:10:56,854 p=1 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-12-04 20:10:57,180 p=1 u=root n=ansible | PLAY [Konductor | Sparta | VPC] *************************************************************************************************************************************************************************************
+2020-12-04 20:10:57,200 p=1 u=root n=ansible | TASK [Gathering Facts] **********************************************************************************************************************************************************************************************
+2020-12-04 20:10:57,200 p=1 u=root n=ansible | Friday 04 December 2020  20:10:57 +0000 (0:00:00.030)       0:00:00.030 ******* 
+2020-12-04 20:10:57,956 p=1 u=root n=ansible | ok: [localhost]
+2020-12-04 20:10:57,975 p=1 u=root n=ansible | TASK [Purge security components using CloudFormation] ***************************************************************************************************************************************************************
+2020-12-04 20:10:57,975 p=1 u=root n=ansible | Friday 04 December 2020  20:10:57 +0000 (0:00:00.775)       0:00:00.806 ******* 
+2020-12-04 20:11:10,389 p=1 u=root n=ansible | changed: [localhost]
+2020-12-04 20:11:10,398 p=1 u=root n=ansible | TASK [Debug output for security components creation] ****************************************************************************************************************************************************************
+2020-12-04 20:11:10,399 p=1 u=root n=ansible | Friday 04 December 2020  20:11:10 +0000 (0:00:12.423)       0:00:13.229 ******* 
+2020-12-04 20:11:10,437 p=1 u=root n=ansible | ok: [localhost] => {
+    "r_cf_security": {
+        "changed": true,
+        "events": [],
+        "failed": false,
+        "log": [
+            "Stack does not exist."
+        ],
+        "output": "Stack Deleted"
+    }
+}
+2020-12-04 20:11:10,448 p=1 u=root n=ansible | TASK [Purge VPC using CloudFormation] *******************************************************************************************************************************************************************************
+2020-12-04 20:11:10,448 p=1 u=root n=ansible | Friday 04 December 2020  20:11:10 +0000 (0:00:00.049)       0:00:13.279 ******* 
+2020-12-04 20:12:06,875 p=1 u=root n=ansible | changed: [localhost]
+2020-12-04 20:12:06,889 p=1 u=root n=ansible | TASK [Debug output for VPC creation] ********************************************************************************************************************************************************************************
+2020-12-04 20:12:06,889 p=1 u=root n=ansible | Friday 04 December 2020  20:12:06 +0000 (0:00:56.441)       0:01:09.720 ******* 
+2020-12-04 20:12:06,927 p=1 u=root n=ansible | ok: [localhost] => {
+    "r_cf_vpc": {
+        "changed": true,
+        "events": [],
+        "failed": false,
+        "log": [
+            "Stack does not exist."
+        ],
+        "output": "Stack Deleted"
+    }
+}
+2020-12-04 20:12:06,945 p=1 u=root n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************
+2020-12-04 20:12:06,945 p=1 u=root n=ansible | localhost                  : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-12-04 20:12:06,945 p=1 u=root n=ansible | Playbook run took 0 days, 0 hours, 1 minutes, 9 seconds
+2020-12-04 20:12:06,945 p=1 u=root n=ansible | Friday 04 December 2020  20:12:06 +0000 (0:00:00.055)       0:01:09.776 ******* 
+2020-12-04 20:12:06,945 p=1 u=root n=ansible | =============================================================================== 
