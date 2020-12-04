@@ -43,6 +43,7 @@ Example variable file:
 cluster_name: example
 base_domain: redhat.com
 infrastructure_name: example
+vpc_owner: joe.doe@redhat.com
 
 hosted_zone_name: "{{ base_domain }}"
 

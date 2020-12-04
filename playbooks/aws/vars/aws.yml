@@ -7,10 +7,8 @@
 cluster_name: example
 base_domain: redhat.io
 infrastructure_name: example
-
+vpc_owner: jane.doe@redhat.com
 hosted_zone_name: "{{ base_domain }}"
-
-rhcos_ami: ami-a1f6cec0
 
 ###############################################################################
 # Optional Variables

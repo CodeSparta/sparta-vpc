@@ -24,6 +24,9 @@ Parameters:
     Default: 10.0.0.0/16
     Type: String
 
+  VpcOwner:
+    Type: String
+
   AvailabilityZoneCount:
     MinValue: 1
     MaxValue: 3
@@ -82,6 +85,8 @@ Resources:
           Value: !Join ["-", [!Ref InfrastructureName, "vpc"]]
         - Key: !Join ["", [kubernetes.io/cluster/, !Ref InfrastructureName]]
           Value: owned
+        - Key: "Owner"
+          Value: !Ref VpcOwner
 
   PublicSubnet1:
     Type: "AWS::EC2::Subnet"

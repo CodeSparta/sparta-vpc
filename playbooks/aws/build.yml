@@ -17,6 +17,7 @@
           VpcCidr: "{{ vpc_cidr | default(omit) }}"
           AvailabilityZoneCount: "{{ availability_zone_count | default(omit) }}"
           SubnetBits: "{{ subnet_bits | default(omit) }}"
+          VpcOwner: "{{ vpc_owner }}"
         state: present
       register: r_cf_vpc
 
